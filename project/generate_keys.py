@@ -1,9 +1,9 @@
-# generate_keys.py
+
 from cryptography.hazmat.primitives.asymmetric import rsa
 from cryptography.hazmat.primitives import serialization
 import os
 
-# تأكد أن مجلد keys موجود
+
 os.makedirs("keys", exist_ok=True)
 
 private_key = rsa.generate_private_key(public_exponent=65537, key_size=2048)
